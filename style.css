@@ -79,6 +79,7 @@ body {
 
 .header .title {
     margin-top: 60px;
+    margin-bottom: 20px;
     text-transform: uppercase;
     letter-spacing: 3px;
     font-size: clamp(2.2em, 6vw, 4em);
@@ -86,7 +87,7 @@ body {
 }
 
 .header .description {
-    min-height: 350px;
+    min-height: 400px;
     max-width: 1000px;
     margin: 20px 40px;
     font-size: clamp(0.9em, 2.5vw, 1.4em);
@@ -131,10 +132,17 @@ body {
 #numbers li.min {
     background: blue;
     box-shadow: 1px 0px 18px 10px blue;
+    transition: box-shadow 0.5s;
 }
 
 #numbers li.done {
     background: grey;
+}
+
+#numbers li.swap {
+    background: green;
+    box-shadow: 1px 0px 18px 10px green;
+    transition: box-shadow 1s;
 }
 
 #numbers li.active::before {
@@ -202,6 +210,8 @@ footer {
     height: 55px;
     text-align: center;
     padding: 0 15px;
+    font-weight: 500;
+    font-style: italic;
 }
 
 @media all and (max-width:480px) {
